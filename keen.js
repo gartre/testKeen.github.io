@@ -11,10 +11,8 @@
     // client.recordEvent('purchases', {
     //   item: 'Avocado'
     // });
-  });
 
-
-const helpers = KeenTracking.helpers;
+    const helpers = KeenTracking.helpers;
 
 KeenTracking.listenTo({
   'click .navbar a': (e) => {
@@ -37,3 +35,5 @@ KeenTracking.listenTo({
     });
   }
 });
+
+  });
