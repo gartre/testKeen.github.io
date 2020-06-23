@@ -15,7 +15,6 @@
 
 
 const helpers = KeenTracking.helpers;
-const timer = KeenTracking.utils.timer();
 timer.start();
 
 KeenTracking.listenTo({
@@ -25,9 +24,6 @@ KeenTracking.listenTo({
         intent: 'navigate',
         target_path: helpers.getDomNodePath(e.target)
       },
-      visitor: {
-        time_on_page: timer.value()
-      }
     });
   },
   'submit form#signup': (e) => {
@@ -38,7 +34,6 @@ KeenTracking.listenTo({
       },
       visitor: {
         email_address: document.getElementById('signup-email').value,
-        time_on_page: timer.value()
       }
     });
   }
