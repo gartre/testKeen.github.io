@@ -15,7 +15,6 @@
 
 
 const helpers = KeenTracking.helpers;
-timer.start();
 
 KeenTracking.listenTo({
   'click .navbar a': (e) => {
