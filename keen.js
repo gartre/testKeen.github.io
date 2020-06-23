@@ -16,7 +16,7 @@
 
 KeenTracking.listenTo({
   'click .navbar a': (e) => {
-  	consol.log(e);
+  	console.log(e);
     return client.recordEvent('click', {
       action: {
         intent: 'navigate',
