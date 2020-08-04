@@ -19,7 +19,7 @@ KeenTracking.listenTo({
   	console.log(e);
     return client.recordEvent('click', {
       action: {
-        intent: 'navigate',
+        //intent: 'navigate',
         target_path: e.target.innerHTML
       },
     });
