@@ -20,9 +20,8 @@ KeenTracking.listenTo({
     return client.recordEvent('click', {
       action: {
         intent: 'navigate',
-        target_path: e.target.innerHTML ,
-        email: 'test'
-        
+        target_path: e.target.innerHTML,
+        email:  "shfkha"
       },
     });
   },
